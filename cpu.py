@@ -156,7 +156,7 @@ class CPU:
                 self.pc += self.instruction_size
 
     def execute_HLT(self):
-        self.halted - True
+        self.halted = True
 
     def execute_LDI(self):
         self.reg[self.operand_a] = self.operand_b
